@@ -1,0 +1,145 @@
+ss[10pt]{article}
+
+\usepackage[utf8]{inputenc} % To enter special characters
+\usepackage[english]{babel} % For punctuation to follow English grammer rules
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} % Redefined so that that columns in tables are centered instead of left justified
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true
+    linkcolor=cyan
+}
+\urlstyle{same}
+
+% If you want to change page size, adjust below.
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={210mm,297mm},
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm,
+}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{{\Huge Taher Jafferjee}}
+\rhead{{\scriptsize 
+        %Add webhere |
+        Github://\href{https://github.com/rehatter/}{rehatter} |
+        LinkedIn://\href{https://ca.linkedin.com/in/taherjafferjee}{taherjafferjee}}}
+
+% To change font, change iwona to whatever you want below.
+\renewcommand*\rmdefault{iwona}
+\begin{document}
+
+
+% In each section the information is organised using tables.
+% One particular note, in some places you will see table rows as
+% ' & <some info>', this is done so that the cell doesn't expand to 
+% accommodate the text as this will mess up how everything looks.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Profile                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Profile}
+\noindent
+Software engineer passionate about developing optimised, low-level systems code. Knowledgeable of *nix systems and how to develop efficient code for them. Strong problem-solving, algorithm development and Math skills.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Education                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Education}
+\begin{tabular}{P{4.5cm}|p{11.25cm}}
+\textbf{University of Toronto} & 2009 - 2015\\
+& B.Sc. Specialist in Computer Science with Minor in Mathematics, 
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Courses                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Relevant Courses}
+\begin{tabular}{P{4.5cm}|p{10.5cm}}
+\textbf{Graduate courses} & \\
+Computer Graphics (C++) & Developed ray-tracing renderer from scratch. Made extensive use of C++ Math libraries\\
+\hline
+\textbf{Undergraduate courses} & \\
+Operating Systems (C) & Implemented \texttt{malloc()} \& \texttt{free()} using \texttt{sbrk()}, made fully functional Unix style file system using \texttt{mmap()} of a disk image. \\
+Software Tools \& Systems Programming (C) & Wrote personal web-based calendar using network sockets.\\
+Functional Programming (Haskell, Scheme, Prolog) & Made fully-functional SQL-style database in Scheme, wrote Scheme parser in Haskell.
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Skills                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Skills}
+\begin{tabular}{P{4.5cm}|p{10.5cm}}
+Low-level languages & Fluent in C, experience in hand-optimising Assembly code. Familiarity with C++. Able to use \texttt{gdb}, \texttt{objdump}, \texttt{valgrind} effectively.\\
+High-level languages & Skilled \& experienced in Python. Some experience in Java. \\
+Scripting + OS & Knowledgeable of *nix operating systems, experienced in bash scripting. Familiarity with MATLAB.\\
+Functional languages + Misc & Experience in Haskell, Scheme, Prolog, Verilog; basic awareness of Latex, HTML, CSS
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Research Experience              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Research Experience}
+\begin{tabular}{P{4.5cm}|p{10.5cm}}
+\textbf{UofT Computer Vision Lab} & Fall 2014\\
+Undergraduate Researcher & Developed automatic solver for $>$ 10,000 piece jigsaw puzzles.\\
+(MATLAB, C) & Used k-nearest neighbours and sliding window algorithm to develop piece congruence measure which improves upon existing solutions.\\
+& Accepted to Trinity College Undergraduate Student Research Poster Session.\\
+& Currently developing distributed code to speed up run time.
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Projects                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Projects}
+\begin{tabular}{P{4.5cm}|p{10.5cm}}
+\textbf{Tea Auction Organiser} & Summer 2014\\
+C & Developed bespoke software to manage tea auction purchases for exporters in Sri Lanka.\\
+ & Used C network sockets to store data in server which was updated whenever purchases were made.\\
+\textbf{Container loading calculator} & Spring 2015\\
+Python & Used dynamic programming to calculate the maximum number of boxes which can be loaded into sea containers.\\
+& Results in increases in loading quantities of up to 15\% in some cases.\\
+%\hline
+%\textbf{}
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Leadership               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Leadership}
+\begin{tabular}{P{4.5cm}|p{10.5cm}}
+\textbf{UofT Dept. of Comp. Sci} & Fall 2014 - Spring 2015\\
+ & Assisted in convincing two lecturer candidates to accept employment in faculty positions.\\
+\hline
+\textbf{Comp. Sci. Student Union} & Fall 2014 - Spring 2015\\
+Sr. External Liaison & Raised over \$500.00 in in-kind sponsorship, helped CSSU develop strong industry relations. \\
+\hline
+\textbf{UofTHacks} & Summer 2014\\
+Sr. External Liaison & Raised over \$7000.00 in cash and in-kind sponsorship.\\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Work Experience              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Work Experience}
+\begin{tabular}{P{4.5cm}|p{10.5cm}}
+\textbf{Natural Foods Exports} & Summer 2010 - Fall 2012\\
+\end{tabular}
+
+\end{document}
+
